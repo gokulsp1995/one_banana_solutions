@@ -1,0 +1,30 @@
+// One banana solutions
+
+const numbers = ["One", "Two","Three","Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]; //Declaring the list of numbers
+
+// Declaring an empty array to store the modified values
+let output=[];
+// Entering a loop to iterate the array elements
+  for(let num in numbers) {
+    let result = numbers[num]; //Assigning each array elements to a new variable for performing operations  
+  
+  let include_I = result.toLowerCase().includes("i"); //Checking for Capital and small letter "i"
+  let include_E = result.toLowerCase().includes("e"); //Checking for Capital and small letter "e"
+
+  if(include_I && include_E) { //for numbers having both i and e
+    result += " yipes";        //string addition to include the required values
+  }
+  else if(include_I){
+    result += " yip";
+  }
+  else if(include_E){
+    result += " yep";
+  }
+
+  output.push(result)
+}
+console.log("Array",output);
+
+let string_list = output.join(",");
+console.log("Answer in string:", string_list);
+
