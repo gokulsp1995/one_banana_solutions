@@ -8,16 +8,16 @@ let output=[];
   for(let num in numbers) {
     let result = numbers[num]; //Assigning each array elements to a new variable for performing operations  
   
-  let include_I = result.toLowerCase().includes("i"); //Checking for Capital and small letter "i"
-  let include_E = result.toLowerCase().includes("e"); //Checking for Capital and small letter "e"
+  let includes_I = result.toLowerCase().includes("i"); //Checking for Capital and small letter "i"
+  let includes_E = result.toLowerCase().includes("e"); //Checking for Capital and small letter "e"
 
-  if(include_I && include_E) { //for numbers having both i and e
+  if(includes_I && includes_E) { //for numbers having both i and e
     result += " yipes";        //string addition to include the required values
   }
-  else if(include_I){
+  else if(includes_I){
     result += " yip";
   }
-  else if(include_E){
+  else if(includes_E){
     result += " yep";
   }
 
