@@ -25,6 +25,6 @@ let output=[];
 }
 console.log("Array",output);
 
-let string_list = output.join(",");
+let string_list = output.join(" ");
 console.log("Answer in string:", string_list);
 
