@@ -1,6 +1,6 @@
 // One banana solutions
 
-const numbers = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]; //Declaring the list of numbers
+const numbers = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]; //Declaring the list of numbers, can extend to more numbers
 
 // Declaring an empty array to store the modified values
 let output = [];
